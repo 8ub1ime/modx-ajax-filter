@@ -78,7 +78,7 @@ $lim = $more > $limit ? $limit : $more;
 
 $button = '';
 if($more > 0){
-	$button = '<div class="ajax-filter-count col-sm-12" data-count="'.$count.'"><a href="#" class="btn-lg btn-primary ajax-more">Загрузить еще '.$lim.' из '.$more.'</a></div>';
+	$button = '<div class="ajax-filter-count" data-count="'.$count.'"><a href="#" class="ajax-more">Загрузить еще '.$lim.' из '.$more.'</a></div>';
 }
 
 return $modx->runSnippet('pdoResources',$params).$button;
