@@ -52,6 +52,7 @@ $params_count = array(
 	'limit' => 0,
 	'tpl' => '@INLINE ,',
 	'select' => 'id',
+	'includeTVs' => $fields,
 	'showHidden' => '1',
 	'where' => $where
 	);
