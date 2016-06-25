@@ -12,6 +12,10 @@ $(function() {
 			sortDownText          = 'По убыванию',
 			sortUpText            = 'По возрастанию';
 
+	$('' + ajaxFormSelector + '').submit(function() {
+		return false;
+	});
+
 	function ajaxCount() {
 		if($('.ajax-filter-count').length) {
 			var count = $('.ajax-filter-count').data('count');
